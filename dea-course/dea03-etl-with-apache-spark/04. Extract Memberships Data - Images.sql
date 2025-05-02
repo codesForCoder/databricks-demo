@@ -11,7 +11,8 @@
 
 -- COMMAND ----------
 
--- MAGIC %fs ls '/Volumes/gizmobox/landing/operational_data/memberships'
+-- MAGIC %fs
+-- MAGIC ls '/Volumes/gizmobox/landing/operational_data/memberships'
 
 -- COMMAND ----------
 

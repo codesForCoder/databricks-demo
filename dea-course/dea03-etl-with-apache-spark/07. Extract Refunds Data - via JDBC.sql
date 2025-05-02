@@ -23,11 +23,13 @@ CREATE SCHEMA IF NOT EXISTS hive_metastore.bronze;
 CREATE TABLE IF NOT EXISTS hive_metastore.bronze.refunds
 USING JDBC
 OPTIONS (
-  url 'jdbc:sqlserver://gizmobox-srv.database.windows.net:1433;database=gizmobox-db',
+  url 'jdbc:postgresql://database-pg-dbx.c9k4iwagar2t.ap-south-1.rds.amazonaws.com:5432/postgres',
   dbtable 'refunds',
-  user 'gizmoboxadm',
-  password 'Gizmobox@Adm'
+  user 'postgres',
+  password 'postgres'
 );  
+
+
 
 -- COMMAND ----------
 

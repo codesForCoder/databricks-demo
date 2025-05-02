@@ -13,7 +13,7 @@
 
 -- COMMAND ----------
 
--- MAGIC %fs ls 'abfss://gizmobox@deacourseextdl.dfs.core.windows.net/landing/external_data/payments'
+-- MAGIC %fs ls 's3://gizmobox-demo-bucket/landing/external-data/payments'
 
 -- COMMAND ----------
 
@@ -30,7 +30,7 @@ OPTIONS (
   header = "true",
   delimiter = ","
 )  
-LOCATION 'abfss://gizmobox@deacourseextdl.dfs.core.windows.net/landing/external_data/payments';
+LOCATION 's3://gizmobox-demo-bucket/landing/external-data/payments';
 
 -- COMMAND ----------
 
